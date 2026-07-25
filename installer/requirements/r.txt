@@ -1,0 +1,30 @@
+# Core Hyprland
+hyprland hyprlock hypridle hyprpicker hyprpolkitagent
+
+# Terminals / Apps
+kitty rofi-wayland waybar swaync wlogout nautilus firefox yazi fastfetch cava
+
+# Wayland utilities
+grim slurp swappy wl-clipboard playerctl brightnessctl pamixer pavucontrol
+
+# System services
+network-manager-applet blueman bluez bluez-utils power-profiles-daemon
+
+# Core utils (from your to-do.txt)
+linux-firmware git base-devel vim ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick
+
+# Fonts
+noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd
+
+# Audio backend (pick one; scripts reference both pactl AND wpctl)
+pipewire pipewire-pulse wireplumber
+
+# Misc tools referenced in scripts/configs
+cliphist rfkill xdg-open notify-send pidof pacman-contrib
+
+# extras 
+unzip python-pip zip zsh hyprsunset 
+
+
+#sudo pacman -S --needed $(grep -v '^#' packages.txt) or 
+#grep -v '^#' packages.txt | xargs sudo pacman -S --needed

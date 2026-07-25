@@ -1,0 +1,10 @@
+awww 
+matugen-bin 
+rofimoji 
+wtype 
+ttf-font-awesome 
+ttf-nerd-fonts-symbols-common
+zen-browser-bin
+spotify
+
+# grep -v '^#' aur-packages.txt | xargs yay -S --needed
