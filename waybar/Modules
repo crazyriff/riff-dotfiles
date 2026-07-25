@@ -281,7 +281,7 @@
 	"format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
-	"on-click": "sh -c 'hyprctl dispatch exec \"[float; size 800 550] kitty sh -c \\\"nmcli device wifi rescan && nmtui\\\"\"'"
+	"on-click": "nmcli device wifi rescan && kitty --class nmtui-float -e nmtui"
 },
 
 "network#speed": {
@@ -321,7 +321,7 @@
 	"format-icons": {
 		"headphone": "",
 		"hands-free": "",
-		"headset": "",
+		"headset": "",
 		"phone": "",
 		"portable": "",
 		"car": "",

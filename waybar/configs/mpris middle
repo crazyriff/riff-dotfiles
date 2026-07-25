@@ -39,7 +39,10 @@
         //"mpris",
         //"custom/separator#dot-line",
         "group/notify",	
-	"battery",
+
+  "power-profiles-daemon",
+	"custom/separator#blank",
+  "battery",
 	"custom/separator#blank",
 	"network",
 	"custom/separator#blank",  
