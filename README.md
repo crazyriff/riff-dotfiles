@@ -14,7 +14,7 @@ You can install the dotfiles automatically using the included installer.
 git clone 'https://github.com/crazyriff/riff-dotfiles.git'
 cd riff-dotfiles
 cd installer
-chmod +x *
+chmod +x *.sh
 ./install.sh
 ```
 
