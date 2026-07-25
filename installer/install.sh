@@ -32,3 +32,4 @@ bash services.sh
 
 echo "Done!"
 echo "You may need to log out and log back in."
+echo "Hint: You can press SUPER + H to see all keybinds!"
