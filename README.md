@@ -11,6 +11,8 @@ You can install the dotfiles automatically using the included installer.
 > **Note:** The automated installer currently supports **Arch Linux** only.
 
 ```bash
+git clone 'https://github.com/crazyriff/riff-dotfiles.git'
+cd riff-dotfiles
 cd installer
 chmod +x *
 ./install.sh
