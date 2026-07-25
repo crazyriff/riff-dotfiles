@@ -18,8 +18,6 @@ chmod +x *
 
 If you're using another Linux distribution, you'll need to install the required packages and copy the configuration files manually.
 
-```
-
 ## About
 
 This is my first Hyprland rice! 🌾
