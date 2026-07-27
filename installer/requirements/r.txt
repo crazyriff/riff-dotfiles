@@ -62,10 +62,10 @@ wireplumber
 
 # Misc tools referenced in scripts/configs
 cliphist 
-rfkill 
-xdg-open 
-notify-send 
-pidof 
+util-linux
+xdg-utils
+libnotify
+procps-ng 
 pacman-contrib
 
 # extras 
