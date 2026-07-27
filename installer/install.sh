@@ -28,7 +28,7 @@ cd ..
 bash config.sh
 
 #Enable Services
-bash services.sh
+bash service.sh
 
 echo "Done!"
 echo "You may need to log out and log back in."
