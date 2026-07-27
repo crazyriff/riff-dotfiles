@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Backing up configs..."
+echo -e "\033[0;34m[INFO]\033[0m Backing up configs..."
 
 set -e
 
@@ -28,16 +28,18 @@ for cfg in "${configs[@]}"; do
     mv "$conf/$cfg" "$backup"
   fi
 done
-
-echo "Installing configs..."
+echo -e "\033[0;32m[OK]\033[0m Backup Done!"
+sleep 2
+echo -e "\033[0;34m[INFO]\033[0m Installing configs..."
 
 for cfg in "${configs[@]}"; do
   if [[ -d "$dotfiles/$cfg" ]]; then
-    echo "Installing $cfg..."
+    echo -e "\033[0;34m[INFO]\033[0m Installing $cfg..."
     cp -r "$dotfiles/$cfg" "$conf/"
   else
-    echo "Warning: '$dotfiles/$cfg' not found! Skipping..."
+    echo -e "\033[0;31m[ERROR]\033[0m '$dotfiles/$cfg' not found! Skipping..."
   fi
 done
 
-echo "Done!"
+echo -e "\033[0;32m[OK]\033[0m Done!"
+sleep 2
