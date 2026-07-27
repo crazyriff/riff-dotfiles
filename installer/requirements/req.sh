@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing official packages..."
-grep -v '^#' packages.txt | xargs sudo pacman -S --needed
+grep -v '^#' r.txt | xargs sudo pacman -S --needed
 
 if command -v yay >/dev/null 2>&1; then
   echo "yay alredy installed."
@@ -23,4 +23,4 @@ else
 fi
 
 echo "Installing AUR packages using yay... "
-grep -v '^#' aur-packages.txt | xargs yay -S --needed
+grep -v '^#' r2.txt | xargs yay -S --needed
