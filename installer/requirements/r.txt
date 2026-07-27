@@ -5,7 +5,7 @@ hypridle
 hyprpicker 
 hyprpolkitagent
 
-# Terminals / Apps
+# Apps
 kitty 
 rofi-wayland 
 waybar swaync 
@@ -55,7 +55,7 @@ noto-fonts-cjk
 noto-fonts-emoji 
 ttf-jetbrains-mono-nerd
 
-# Audio backend (pick one; scripts reference both pactl AND wpctl)
+# Audio backend 
 pipewire 
 pipewire-pulse 
 wireplumber
