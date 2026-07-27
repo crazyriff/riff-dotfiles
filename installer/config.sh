@@ -4,7 +4,7 @@ echo "Backing up configs..."
 
 set -e
 
-dotfiles="$HOME/dotfiles"
+dotfiles="$HOME/riff-dotfiles"
 backup="$HOME/.config-backup-$(date +%Y%m%d-%H%M%S)"
 conf="$HOME/.config"
 
