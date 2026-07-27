@@ -41,5 +41,13 @@ for cfg in "${configs[@]}"; do
   fi
 done
 
+# Copy Wallpapers
+if [[ -d "$dotfiles/wallpapers" ]]; then
+  echo -e "\033[0;34m[INFO]\033[0m Copying wallpapers..."
+  cp -r "$dotfiles/wallpapers" "$HOME/wallpapers"
+else
+  echo -e "\033[0;31m[ERROR]\033[0m '$dotfiles/wallpapers' not found! Skipping..."
+fi
+
 echo -e "\033[0;32m[OK]\033[0m Done!"
 sleep 2
