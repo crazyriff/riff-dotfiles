@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing official packages..."
-grep -v '^#' r.txt | xargs sudo pacman -S --needed
+grep -v '^#' r.txt | xargs sudo pacman -S 
 
 if command -v yay >/dev/null 2>&1; then
   echo "yay alredy installed."
