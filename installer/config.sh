@@ -19,7 +19,6 @@ configs=(
   fastfetch
   matugen
   swaync
-  "swaync 0.12"
   wlogout
 )
 

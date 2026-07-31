@@ -16,7 +16,7 @@ SELECTED_PATH="$WALLPAPER_DIR/$SELECTED_WALL"
 
 # === SET WALLPAPER ===
 awww img "$SELECTED_PATH" --transition-type any --transition-fps 60 --transition-duration 2
-matugen image "$SELECTED_PATH" --prefer=saturation 2>&1
+matugen image "$SELECTED_PATH" --source-color-index 1 2>&1
 # === CREATE SYMLINK ===
 mkdir -p "$(dirname "$SYMLINK_PATH")"
 ln -sf "$SELECTED_PATH" "$SYMLINK_PATH"
