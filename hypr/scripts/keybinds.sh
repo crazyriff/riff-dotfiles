@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF | rofi -dmenu -i -p "Hyprland Keybindings"
+cat <<EOF | rofi -dmenu -i -p "Hyprland Keybindings"
 --- WINDOW MANAGEMENT ---
 SUPER + Q              Close Window
 SUPER + SHIFT + Q      Kill Active Process
@@ -32,6 +32,7 @@ SUPER + R              Restart Waybar
 SUPER + CTRL + B       Selects Waybar Styles
 SUPER + ALT + B        Selects Waybar Layouts
 SUPER + L              Lock Screen
+SUPER + SHIFT + C      Caffinate (stay awake)
 CTRL + ALT + Delete    Exit Hyprland
 --- MEDIA & HARDWARE ---
 SUPER + ALT + Right          Next Track

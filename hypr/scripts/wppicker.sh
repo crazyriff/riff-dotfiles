@@ -15,8 +15,14 @@ SELECTED_WALL=$(for a in $(ls -1t ./*.jpg ./*.png ./*.gif ./*.jpeg 2>/dev/null |
 SELECTED_PATH="$WALLPAPER_DIR/$SELECTED_WALL"
 
 # === SET WALLPAPER ===
-awww img "$SELECTED_PATH" --transition-type any --transition-fps 60 --transition-duration 2
-matugen image "$SELECTED_PATH" --source-color-index 1 2>&1
+if [[ "$(readlink -f "$SELECTED_PATH")" == "$HOME/wallpapers/arch.png" ]]; then
+  awww img "$SELECTED_PATH" --transition-type any --transition-fps 60 --transition-duration 2
+  matugen color hex a485dd
+#elif
+else
+  awww img "$SELECTED_PATH" --transition-type any --transition-fps 60 --transition-duration 2
+  matugen image "$SELECTED_PATH" --source-color-index 1 2>&1
+fi
 # === CREATE SYMLINK ===
 mkdir -p "$(dirname "$SYMLINK_PATH")"
 ln -sf "$SELECTED_PATH" "$SYMLINK_PATH"
